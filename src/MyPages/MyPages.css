@@ -1,0 +1,131 @@
+.mypage-container {
+  font-family: sans-serif;
+  background-color: #fdfaf8;
+  min-height: 100vh;
+}
+
+.mypage-header {
+  background-color: #f3d8de;
+  padding: 40px 20px 20px;
+  text-align: left;
+  font-size: 24px;
+  color: #d1436d;
+  font-weight: bold;
+}
+
+.mypage-profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.avatar-placeholder {
+  width: 50px;
+  height: 50px;
+  background: #ddd;
+  border-radius: 50%;
+}
+
+.username {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.badges {
+  display: flex;
+  gap: 5px;
+}
+
+.badge {
+  background-color: #f8f3d4;
+  padding: 2px 8px;
+  font-size: 10px;
+  border-radius: 12px;
+  color: #7f8c00;
+}
+
+.recipe-button img {
+  width: 24px;
+  height: 24px;
+}
+
+.mypage-section {
+  border-top: 1px solid #eee;
+  padding: 10px 20px;
+}
+
+.section-toggle {
+  width: 100%;
+  background: #f5d9e2;
+  border: none;
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  border-radius: 8px;
+  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+}
+
+.section-content {
+  padding: 10px 20px;
+  background: #fff;
+}
+
+.section-item {
+  padding: 8px 0;
+  cursor: pointer;
+}
+
+.logout-section {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.logout-button {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logout-modal {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: center;
+  width: 80%;
+}
+
+.modal-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.modal-buttons button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.modal-buttons .confirm {
+  color: white;
+  background-color: red;
+}
