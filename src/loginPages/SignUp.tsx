@@ -27,6 +27,7 @@ export default function SignUp() {
   const isNameValid = form.name.trim() !== '';
   const isEmailValid = /\S+@\S+\.\S+/.test(form.email);
   const isBirthValid = form.year && form.month && form.day;
+  const [isSubmitClicked, setIsSubmitClicked] = useState(false);
   const isFormValid =
     isIdValid &&
     isPasswordValid &&
@@ -38,6 +39,7 @@ export default function SignUp() {
 
 
   const handleSubmit = () => {
+    setIsSubmitClicked(true);
     if (isFormValid) {
       navigate('/keyword');
     }
@@ -85,7 +87,7 @@ export default function SignUp() {
           value={form.password}
           onChange={handleChange}
           type="password"
-          placeholder="비밀번호 입력 (문자, 숫자, 특수문자 포함 6~10자)"
+          placeholder="비밀번호 입력 (문자, 숫자, 특수문자자(!@#$%^&*) 포함 6~10자)"
           style={{
             ...styles.input,
             borderColor: form.password && !isPasswordValid ? 'red' : '#d1cc9c',
@@ -141,7 +143,7 @@ export default function SignUp() {
               onChange={handleChange}
               style={{
                 ...styles.select,
-                borderColor: form[field as 'year' | 'month' | 'day'] === '' ? 'red' : '#d1cc9c',
+                borderColor: isSubmitClicked && form[field as 'year' | 'month' | 'day'] === '' ? 'red' : '#d1cc9c',
               }}
             >
               <option value="">{['년도', '월', '일'][idx]}</option>
