@@ -1,0 +1,84 @@
+@font-face {
+  font-family: 'Pretend-M'; /* 사용할 폰트의 이름 */
+  src: url('../fonts/Pretendard-Medium.otf') format('truetype');
+}
+
+.container {
+  padding-top: 49px;
+  text-align: center;
+}
+
+.title {
+  margin-top: 85px;
+  margin-bottom: 90px;
+  font-size: 15px;
+  color: #6F722B;
+}
+
+.keywords {
+  display: flex;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 15px 12px;
+  margin-bottom: 20px;
+  padding: 0 28px;
+}
+
+/* 기본 버튼 스타일 */
+.keyword-btn {
+  border: 1px solid #BCBCBC;
+  border-radius: 20px;
+  background-color: white;
+  color: #BCBCBC;
+  cursor: pointer;
+  font-size: 14px;
+  height: 33.28px;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+  padding: 0;
+  text-align: center; 
+}
+
+/* 선택된 버튼 */
+.keyword-btn.selected {
+  background-color: #AAAE32;
+  color: white;
+  border: none;
+}
+
+/* 길이에 따라 width 조정 */
+.keyword-btn {
+  width: fit-content;
+  min-width: 87.52px;
+  padding: 0 10px;
+}
+
+.keyword-btn[data-length='5'] {
+  width: 97.38px;
+}
+
+/* 완료 버튼 */
+.submit-btn {
+  width: 328px;
+  height: 51px;
+  margin-top: 68px;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+
+.submit-btn.active {
+  background-color: #AAAE32;
+}
+
+.submit-btn.disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
