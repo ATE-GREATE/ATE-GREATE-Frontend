@@ -46,7 +46,7 @@ const HomeJapan: React.FC = () => {
         paddingBottom: '100px',
       }}
     >
-      {/* 좌측 상단 홈 버튼 */}
+      {/* 홈 버튼 */}
       <button
         onClick={HomeClick}
         style={{
@@ -69,7 +69,7 @@ const HomeJapan: React.FC = () => {
         />
       </button>
 
-      {/* 우측 상단 알림 버튼 */}
+      {/* 알림 버튼 */}
       <button
         onClick={NotificationClick}
         style={{
@@ -107,7 +107,7 @@ const HomeJapan: React.FC = () => {
         만들지 고민인가요?
       </div>
 
-      {/* 🔍 검색창 */}
+      {/* 검색창 */}
       <div
         style={{
           position: 'absolute',
@@ -148,7 +148,7 @@ const HomeJapan: React.FC = () => {
         />
       </div>
 
-      {/* 하얀색 컨테이너 (카드 영역 배경) */}
+      {/* 하얀색 컨테이너 */}
       <div
         style={{
           position: 'absolute',

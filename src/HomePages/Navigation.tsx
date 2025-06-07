@@ -32,8 +32,8 @@ const Navigation: React.FC = () => {
     icon: 'MyPages.png',
     iconActive: 'MyPagesClick.png',
     label: '마이페이지',
-    path: '/MyPage',
-    folder: 'MyPage',
+    path: '/MyPages',
+    folder: 'MyPages',
   },
 ];
 
@@ -58,7 +58,7 @@ const Navigation: React.FC = () => {
     isActive = location.pathname.startsWith(path);
   }
 
-  if (label === '마이페이지지') {
+  if (label === '마이페이지') {
     isActive = ['/MyPages', '/MyRecipe', '/Edit', '/Inquiry', 'Private' ].some(prefix =>
       location.pathname.startsWith(prefix)
     );

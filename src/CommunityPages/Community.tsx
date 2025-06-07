@@ -4,6 +4,7 @@ import '../index1.css';
 import '../NSOTF_B.css';
 import '../Pretend_M.css';
 import '../Pretend_SB.css';
+import '../Pretend_R.css';
 import '../HomePages/AddRecipeButton.css';
 import Navigation from '../HomePages/Navigation';
 
@@ -51,16 +52,17 @@ const Community: React.FC = () => {
   };
 
   return (
-    <div style={{
-      backgroundColor: '#F5E1E3',
-      height: '100vh',
-      margin: '0 auto',
-      overflow: 'hidden',
-      position: 'relative',
-      paddingBottom: '100px',
-      fontFamily: 'Pretendard-Regular',
-    }}>
-      {/* 배경 카드 */}
+     <div
+      style={{
+        backgroundColor: '#F5E1E3',
+        height: '100vh',
+        margin: '0 auto',
+        overflow: 'hidden',
+        position: 'relative',
+        paddingBottom: '100px',
+      }}
+    >
+      {/* ffffff 배경 */}
       <div style={{
         position: 'absolute',
         top: '266px',
@@ -80,6 +82,7 @@ const Community: React.FC = () => {
         left: '40px',
         fontSize: '40px',
         color: '#913636',
+        fontFamily: 'NSOTF_B',
       }}>
         커뮤니티
       </div>
@@ -92,13 +95,13 @@ const Community: React.FC = () => {
           top: '195px',
           right: '30px',
           backgroundColor: '#9F5A62',
-          color: 'white',
+          color: '#FFFFFF',
           borderRadius: '20px',
           border: 'none',
-          width: '89px',
+          width: '90px',
           height: '34px',
           fontSize: '14px',
-          fontFamily: 'Pretendard-Regular',
+          fontFamily: 'Pretend_R',
           cursor: 'pointer',
         }}
       >
