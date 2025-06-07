@@ -1,131 +1,111 @@
-.mypage-container {
-  font-family: sans-serif;
-  background-color: #fdfaf8;
-  min-height: 100vh;
-}
-
-.mypage-header {
-  background-color: #f3d8de;
-  padding: 40px 20px 20px;
-  text-align: left;
-  font-size: 24px;
-  color: #d1436d;
-  font-weight: bold;
-}
-
-.mypage-profile {
+.keywords {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 15px 12px;
+  margin-bottom: 20px;
+  padding: 0 28px;
 }
 
-.avatar-placeholder {
-  width: 50px;
-  height: 50px;
-  background: #ddd;
-  border-radius: 50%;
-}
-
-.username {
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.badges {
+.tag-container {
   display: flex;
-  gap: 5px;
-}
-
-.badge {
-  background-color: #f8f3d4;
-  padding: 2px 8px;
-  font-size: 10px;
-  border-radius: 12px;
-  color: #7f8c00;
-}
-
-.recipe-button img {
-  width: 24px;
-  height: 24px;
-}
-
-.mypage-section {
-  border-top: 1px solid #eee;
-  padding: 10px 20px;
-}
-
-.section-toggle {
-  width: 100%;
-  background: #f5d9e2;
-  border: none;
-  padding: 12px;
-  text-align: left;
-  font-size: 16px;
-  display: flex;
-  justify-content: space-between;
-  cursor: pointer;
-  border-radius: 8px;
-  box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
-}
-
-.section-content {
-  padding: 10px 20px;
-  background: #fff;
-}
-
-.section-item {
-  padding: 8px 0;
-  cursor: pointer;
-}
-
-.logout-section {
-  text-align: center;
-  margin: 30px 0;
-}
-
-.logout-button {
-  background: none;
-  border: none;
-  color: red;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.modal-backdrop {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0,0,0,0.2);
-  display: flex;
-  align-items: center;
+  gap: 6px;
+  margin-top: -3px;
+  flex-wrap: wrap;
   justify-content: center;
 }
 
-.logout-modal {
-  background: white;
-  padding: 20px;
-  border-radius: 12px;
+.tag-box {
+  background-color: #FFFFFF;
+  border: 1px solid #AAAE32;
+  border-radius: 17.88px;
+  padding: 2px 6px;
+  font-size: 10px;
+  font-family: 'Pretend_M';
+  color: #AAAE32;
   text-align: center;
-  width: 80%;
-}
-
-.modal-buttons {
-  margin-top: 15px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  height: 15px;  
 }
 
-.modal-buttons button {
-  padding: 8px 16px;
+.my-box {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #F5E1E3;
+  border-radius: 0px 0px 16px 16px;
+  background-image: linear-gradient(to bottom, #F5E1E3 90%, #FFFDF7 100%);
   border: none;
-  border-radius: 8px;
-  font-size: 14px;
+  width: 331px;
+  height: 50px;
+  display: flex;
+  align-items: center;
 }
 
-.modal-buttons .confirm {
-  color: white;
-  background-color: red;
+.box-top-1 {
+  top: 420px;
 }
+
+.box-top-2 {
+  top: 500px;
+}
+
+.my-text {
+  color: #000000;
+  margin-left: 20px;
+  font-size: 15px;
+  font-family: 'Pretend_M';
+}
+
+.my-button {
+  position: absolute;
+  top: 0px;
+  left: 280px;
+  border-radius: 10px;
+  background-color: transparent;
+  border: none;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.my-button img {
+  width: 18px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.my-info-box {
+  width: 325px;
+  height: 137px;
+  background-color: #F6EFF0;
+  background-image: linear-gradient(to bottom, #F6EFF0 90%, #FFFDF7 100%);
+  position: absolute;
+  left: 50%;
+  top: 420px;
+  border-style: solid;
+  border-width: 15px;
+  border-color: transparent;
+  transform: translateX(-50%);
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.my-info-button {
+  color: #000000;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  left: 10px;
+  top: 10px;
+  font-size: 16px;
+}
+

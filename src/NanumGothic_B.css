@@ -1,0 +1,4 @@
+@font-face {
+  font-family: 'NG_B'; /* 사용할 폰트의 이름 */
+  src: url('./fonts/NanumGothicBold.otf') format('truetype');
+}
