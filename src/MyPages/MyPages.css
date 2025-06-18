@@ -18,12 +18,12 @@
 
 .tag-box {
   background-color: #FFFFFF;
-  border: 1px solid #AAAE32;
+  border: 1px solid #B5C9E4;
   border-radius: 17.88px;
   padding: 2px 6px;
   font-size: 10px;
   font-family: 'Pretend_M';
-  color: #AAAE32;
+  color: #4B75AD;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -35,13 +35,14 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  background-color: #F5E1E3;
+  background-color: #B5C9E4;
   border-radius: 0px 0px 16px 16px;
-  background-image: linear-gradient(to bottom, #F5E1E3 90%, #FFFDF7 100%);
+  background-image: linear-gradient(to bottom, #B5C9E4 90%, #FFFDF7 100%);
   border: none;
   width: 331px;
   height: 50px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -83,7 +84,7 @@
 }
 
 .my-info-box {
-  width: 325px;
+  /* width: 325px;
   height: 137px;
   background-color: #F6EFF0;
   background-image: linear-gradient(to bottom, #F6EFF0 90%, #FFFDF7 100%);
@@ -95,17 +96,73 @@
   border-color: transparent;
   transform: translateX(-50%);
   box-sizing: border-box;
+  padding: 10px; */
+  background-color: #EDF5FF;
+  background-image: linear-gradient(to bottom, #EDF5FF 90%, #FFFDF7 100%);
+  border-radius: 10px;
   padding: 10px;
 }
 
 .my-info-button {
-  color: #000000;
+  /* color: #000000;
   position: absolute;
   background-color: transparent;
   border: none;
   cursor: pointer;
   left: 10px;
   top: 10px;
-  font-size: 16px;
+  font-size: 16px; */
+  background-color: transparent;
+  border: none;
+  font-family: Pretend_M;
+  font-size: 14px;
+  color: black;
+  margin: 5px 0;
+  text-align: left;
+  cursor: pointer;
 }
 
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 20px;
+  width: 268px;
+  height: 160px;
+  text-align: center;
+}
+
+.modalText {
+  font-size: 19pt;
+  font-family: 'Pretendard-Regular', sans-serif;
+  margin-bottom: 40px;
+  white-space: pre-line;
+}
+
+.modalLine {
+  height: 0.5px;
+  width:300px;
+  background-color: #EDF5FF;
+  margin: 10px 0;
+}
+
+.modalBtn {
+  font-size: 20.61pt;
+  font-family: 'Pretendard-Regular', sans-serif;
+  color: #000;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}

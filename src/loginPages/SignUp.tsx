@@ -87,7 +87,7 @@ export default function SignUp() {
           value={form.password}
           onChange={handleChange}
           type="password"
-          placeholder="비밀번호 입력 (문자, 숫자, 특수문자자(!@#$%^&*) 포함 6~10자)"
+          placeholder="비밀번호 입력 (문자, 숫자, 특수문자(!@#$%^&*) 포함 6~10자)"
           style={{
             ...styles.input,
             borderColor: form.password && !isPasswordValid ? 'red' : '#d1cc9c',

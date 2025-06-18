@@ -1,0 +1,47 @@
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 24px;
+  border-radius: 20px;
+  width: 268px;
+  height: 160px;
+  text-align: center;
+}
+
+.modalText {
+  font-size: 19pt;
+  font-family: 'Pretendard-Regular', sans-serif;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  white-space: pre-line;
+}
+
+.modalLine {
+  height: 0.5px;
+  width:280px;
+  background-color: #000;
+  margin-top: 10px;
+  margin-left: -10px;
+}
+
+.modalBtn {
+  font-size: 18pt;
+  font-family: 'Pretendard-Regular', sans-serif;
+  color: #000;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
