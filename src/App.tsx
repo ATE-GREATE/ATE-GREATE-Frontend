@@ -20,6 +20,8 @@ import MyRecipe from './MyPages/MyRecipe';
 import Private from './MyPages/Private';
 import Edit from './MyPages/Edit';
 import Inquiry from './MyPages/Inquiry';
+import Refrigerator from './RefrigeratorPages/Refrigerator';
+import Ingredients from './RefrigeratorPages/Ingredients';
 
 
 
@@ -46,6 +48,8 @@ const App = () => {
           <Route path="/Private" element={<Private />} /> {/* 마이페이지 */}
           <Route path="/Edit" element={<Edit />} /> {/* 계정수정 페이지 */}
           <Route path="/Inquiry" element={<Inquiry />} /> {/* 문의페이지 */}
+          <Route path="/Refrigerator" element={<Refrigerator/>} /> {/* 냉장고*/}
+          <Route path="/Ingredients" element={<Ingredients/>} /> {/* 냉장고 안 */}
         </Routes>
       </BookmarkProvider>
   );

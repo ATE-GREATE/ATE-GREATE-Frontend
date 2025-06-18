@@ -6,6 +6,7 @@ import '../Pretend_M.css';
 import '../Pretend_SB.css';
 import RecipeCard from './RecipeCard';
 import Navigation from './Navigation';
+import '../HomePages/AddRecipeButton.css';
 
 const SaveRecipe: React.FC = () => {
   const navigate = useNavigate();
@@ -234,37 +235,28 @@ const SaveRecipe: React.FC = () => {
       />
 
       {/* 레시피 카드 목록 */}
-      {savedItems.length === 0 ? (
-        <div
-          style={{
-            position: 'absolute',
-            top: '400px',
-            width: '100%',
-            textAlign: 'center',
-            fontFamily: 'Pretend_M',
-            color: '#666',
-            fontSize: '16px',
-          }}
-        >
-          저장한 레시피가 없습니다.
-        </div>
-      ) : (
-        savedItems.map(([name]) => (
-          <RecipeCard
-            key={name}
-            name={
-              name === 'galbijjim'
-                ? '갈비찜'
-                : name === 'kimbap'
-                ? '김밥'
-                : '비빔밥'
-            }
-            image={`/food/korea/${name}.jpg`}
-            bookmarked={bookmarks[name as keyof typeof bookmarks]}
-            onToggleBookmark={() => toggleBookmark(name)}
-          />
-        ))
-      )}
+      {savedItems.length === 0 && (
+      <div
+        style={{
+          position: 'absolute',
+          top: '400px',
+          width: '100%',
+          textAlign: 'center',
+          fontFamily: 'Pretend_M',
+          color: '#666',
+          fontSize: '16px',
+        }}
+      >
+        저장한 레시피가 없습니다.
+      </div>
+    )}
+
+      <button
+        className="add-recipe-button"
+        onClick={() => navigate('/AddRecipe')}
+      >
+        <img src="/images/AddRecipe.png" alt="Add Recipe" />
+      </button>
 
       {/* 하단 고정 네비게이션 바 */}
       <div

@@ -1,0 +1,117 @@
+.kw-btn {
+  border: 1px solid #B5C9E4;
+  border-radius: 17.88px;
+  background-color: white;
+  color: #4B75AD;
+  cursor: pointer;
+  font-family: 'Pretend_M';
+  font-size: 8.41px;
+  height: auto;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 12px;
+  width: fit-content;
+  min-width: 0;
+  line-height: normal;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+.kw {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+}
+
+.label {
+  font-size: 9px;
+  font-weight: bold;
+  color: #4B75AD;
+  margin-bottom: 4px;
+  margin-top: 1px;
+  font-family: 'Pretend_B';
+}
+
+.input {
+  position: relative;
+  margin-bottom: 11px;
+  width: 268.25px;
+  height: 41.71px;
+  font-size: 9.81px;
+  padding: 12px;
+  border-radius: 8.18px;
+  border: 1px solid #B5C9E4;
+  box-sizing: border-box;
+  margin-bottom: 11px;
+}
+
+.inputWithButtonWrapper {
+  position: relative;
+  margin-bottom: 11px;
+}
+
+.inputWithButton {
+  width: 268.25px;
+  height: 41.71px;
+  font-size: 9.81px;
+  padding: 8.18px;
+  padding-right: 90px;
+  border-radius: 8px;
+  border: 1px solid #B5C9E4;
+  box-sizing: border-box;
+}
+
+.input-error {
+  border: 01px solid red;
+}
+
+.checkButtonInside {
+  position: absolute;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 69.52px;
+  height: 26.99px;
+  background-color: #4B75AD;
+  color: white;
+  border: none;
+  border-radius: 5.72px;
+  font-size: 12.27px;
+  font-family: 'Prtend_R';
+  cursor: pointer;
+}
+
+.select {
+  flex: 1;
+  height: 51px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #B5C9E4;
+  font-size: 11px;
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  gap: 22px;
+  margin-bottom: 92px;
+}
+
+.submitButton {
+  width: 269px;
+  height: 38px;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4B75AD;
+}

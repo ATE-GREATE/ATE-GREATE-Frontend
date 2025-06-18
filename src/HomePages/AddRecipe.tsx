@@ -33,7 +33,7 @@ export default function AddRecipe() {
 
   const handleConfirm = () => {
     setShowModal(false);
-    navigate('/community'); // 커뮤니티 페이지로 이동
+    navigate('/HomeKorea'); // 커뮤니티 페이지로 이동
   };
 
   return (
@@ -118,7 +118,7 @@ export default function AddRecipe() {
         등록
       </button>
 
-      {/* 모달 */}
+      {/* 안내 메세지 */}
       {showModal && (
         <div style={styles.modalOverlay}>
           <div style={styles.modal}>
@@ -131,8 +131,24 @@ export default function AddRecipe() {
         </div>
       )}
 
-      {/* 하단 네비게이션 */}
-      <div style={styles.navBar}>
+      {/* 하단 고정 네비게이션 바 */}
+      <div
+        style={{
+          position: 'fixed',
+          bottom: '20px',
+          left: '50%',
+          transform: 'translateX(-50%)',
+          width: '348px',
+          height: '69px',
+          backgroundColor: '#fff',
+          borderRadius: '34.5px',
+          display: 'flex',
+          justifyContent: 'space-around',
+          alignItems: 'center',
+          boxShadow: '0 0 8px rgba(0,0,0,0.1)',
+          zIndex: 1000,
+        }}
+      >
         <Navigation />
       </div>
     </div>

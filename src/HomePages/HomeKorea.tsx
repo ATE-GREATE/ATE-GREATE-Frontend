@@ -360,7 +360,6 @@ const HomeKorea: React.FC = () => {
           zIndex: 1000,
         }}
       >
-        {/* 네비게이션 아이템들 */}
         <Navigation />
       </div>
     </div>

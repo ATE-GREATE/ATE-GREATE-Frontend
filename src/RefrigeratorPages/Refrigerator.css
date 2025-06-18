@@ -1,0 +1,55 @@
+/* 물음표 버튼 */
+.question-button {
+  position: fixed;
+  bottom: 120px;
+  right: 35px;
+  width: 55px;
+  height: 55px;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+}
+
+/* 모달 창 */
+.modal {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  width: 260px;
+  text-align: center;
+}
+
+/* 모달 텍스트 */
+.modal-text {
+  margin-top: 30px;
+  font-size: 14pt;
+  font-family: 'Inter_R';
+  margin-bottom: 12px;
+  white-space: pre-line;
+}
+
+/* 확인 버튼 */
+.modal-btn {
+  margin-top: 10px;
+  width: 230px;
+  height: 35px;
+  font-size: 10pt;
+  font-family: 'Inter_R';
+  background-color: #A6CEDB;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
