@@ -6,7 +6,7 @@ export default function AddRecipe() {
   const navigate = useNavigate();
 
   const [title, setTitle] = useState(''); // 제목 상태 추가
-  const [image, setImage] = useState<File | null>(null);
+  const [, setImage] = useState<File | null>(null);
   const [preview, setPreview] = useState<string | null>(null);
   const [ingredients, setIngredients] = useState('');
   const [steps, setSteps] = useState(['']);

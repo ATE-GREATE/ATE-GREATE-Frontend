@@ -29,11 +29,10 @@ export default function Edit() {
   const [isIdChecked, setIsIdChecked] = useState(true);
   const isPasswordEntered = form.password.trim() !== '';
   const isPasswordConfirmValid = /^(?=.*[a-zA-Z])(?=.*[0-9])(?=.*[!@#$%^&*]).{6,10}$/.test(form.passwordConfirm);
-  const isPasswordNotSameAsOld = form.password !== form.passwordConfirm;
   const isNameValid = form.name.trim() !== '';
   const isEmailValid = /\S+@\S+\.\S+/.test(form.email);
-  const [isSubmitClicked, setIsSubmitClicked] = useState(false);
-  const [showModal, setShowModal] = useState(false);
+  const [, setIsSubmitClicked] = useState(false);
+  const [, setShowModal] = useState(false);
 
   const isFormValid =
     isIdValid &&
