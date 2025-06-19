@@ -123,7 +123,7 @@ export default function Ingredients() {
               </div>
               <img
                 src="images/dack_ingre.png"
-                onClick={() => navigate(0)}
+                onClick={() => navigate(-1)}
                 style={{
                   width: '30px',
                   height: '30px',
