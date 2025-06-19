@@ -2,7 +2,6 @@ import '../index1.css';
 import LoginButton from './LoginButton';
 import SignUpButton from './SignUpButton';
 import { motion } from "framer-motion";
-import { useEffect } from 'react';
 
 export default function Cover() {
   return (

@@ -1,12 +1,11 @@
 import Navigation from '../HomePages/Navigation';
 import '../index1.css';
-import { useEffect } from 'react';
 
 export default function MyRecipe() {
   return (
     <div
       style={{
-        backgroundColor: '#F5E1E3',
+        backgroundColor: '#B5C9E4',
         height: '100vh',
         margin: '0 auto',
         overflow: 'hidden',
@@ -31,7 +30,7 @@ export default function MyRecipe() {
         left: '50px',
         fontSize: '35px',
         alignItems: 'center',
-        color: '#CC747E',
+        color: '#4B75AD',
         fontFamily: 'NG_B',
       }}>
         나만의 레시피

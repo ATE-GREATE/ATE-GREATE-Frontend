@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Navigate, useNavigate } from "react-router-dom";
-import { useEffect } from 'react';
 
 export default function LoginButton(props: { onClick?: () => void }) {
   const [isHovered, setIsHovered] = useState(false);

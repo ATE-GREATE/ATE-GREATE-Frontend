@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Routes,Route } from 'react-router-dom';
 import Cover from './loginPages/Cover';
 import Login from './loginPages/Login';
@@ -12,7 +11,6 @@ import HomeChina from './HomePages/HomeChina';
 import SaveRecipe from './HomePages/SaveRecipe';
 import { BookmarkProvider } from './HomePages/BookmarkContext';
 import AddRecipe from './HomePages/AddRecipe';
-import BibimbapRecipe  from './HomePages/BibimbapRecipe';
 import Community from './CommunityPages/Community';
 import Writing from './CommunityPages/Writing';
 import MyPages from './MyPages/MyPages';
@@ -22,6 +20,8 @@ import Edit from './MyPages/Edit';
 import Inquiry from './MyPages/Inquiry';
 import Refrigerator from './RefrigeratorPages/Refrigerator';
 import Ingredients from './RefrigeratorPages/Ingredients';
+import Gallerypages from './MyPages/gallerypages';
+import Recipe from './HomePages/Recipe';
 
 
 
@@ -40,7 +40,7 @@ const App = () => {
           <Route path="/HomeWestern" element={<HomeWestern />} /> {/* 양식페이지 */}
           <Route path="/SaveRecipe" element={<SaveRecipe />} /> {/* 저장한레시피 페이지 */}
           <Route path="/AddRecipe" element={<AddRecipe />} /> {/* 레시피 추가 페이지 */}
-          <Route path="/BibimbapRecipe" element={<BibimbapRecipe  />} /> {/* 비빔밥레시피 페이지 */}
+          <Route path="/Recipe" element={<Recipe/>} /> {/* 레시피 카드 */}
           <Route path="/Community" element={<Community />} /> {/* 커뮤니티 페이지 */}
           <Route path="/Writing" element={<Writing />} /> {/* 커뮤니티 읽기 페이지 */}
           <Route path="/MyPages" element={<MyPages />} /> {/* 마이페이지 */}
@@ -50,6 +50,7 @@ const App = () => {
           <Route path="/Inquiry" element={<Inquiry />} /> {/* 문의페이지 */}
           <Route path="/Refrigerator" element={<Refrigerator/>} /> {/* 냉장고*/}
           <Route path="/Ingredients" element={<Ingredients/>} /> {/* 냉장고 안 */}
+          <Route path="/Gallerypages" element={<Gallerypages/>} /> {/* 갤러리 */}
         </Routes>
       </BookmarkProvider>
   );

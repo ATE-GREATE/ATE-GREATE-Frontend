@@ -1,4 +1,3 @@
-// src/contexts/BookmarkContext.tsx
 import React, { createContext, useContext, useState } from 'react';
 
 type BookmarkState = {

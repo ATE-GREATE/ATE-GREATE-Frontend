@@ -36,6 +36,7 @@ const HomeKorea: React.FC = () => {
   });
 
   return (
+    
     <div
       style={{
         backgroundColor: '#EDEFBF',
@@ -46,6 +47,7 @@ const HomeKorea: React.FC = () => {
         paddingBottom: '100px',
       }}
     >
+    <div style = {{display: 'flex', justifyContent: 'center' }} >
       {/* 좌측 상단 홈 버튼 */}
       <button
         onClick={HomeClick}
@@ -68,6 +70,7 @@ const HomeKorea: React.FC = () => {
           }}
         />
       </button>
+      </div>
 
       {/* 우측 상단 알림 버튼 */}
       <button
@@ -107,7 +110,7 @@ const HomeKorea: React.FC = () => {
         만들지 고민인가요?
       </div>
 
-      {/* 🔍 검색창 */}
+      {/* 검색창 */}
       <div
         style={{
           position: 'absolute',
