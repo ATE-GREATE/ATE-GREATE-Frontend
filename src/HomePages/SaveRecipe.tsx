@@ -4,7 +4,6 @@ import React from 'react';
 import '../NSOTF_B.css';
 import '../Pretend_M.css';
 import '../Pretend_SB.css';
-import RecipeCard from './RecipeCard';
 import Navigation from './Navigation';
 import '../HomePages/AddRecipeButton.css';
 

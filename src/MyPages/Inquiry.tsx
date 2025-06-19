@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom';
 import '../index1.css';
 import '../MyPages/Inquity.css'
 import { useState } from 'react';
+import Navigation from '../HomePages/Navigation';
 
 export default function Inquiry() {
     const navigate = useNavigate();
@@ -203,6 +204,26 @@ export default function Inquiry() {
       </div>
     </div>
     </div>
+    {/* 하단 고정 네비게이션 바 */}
+      <div
+        style={{
+          position: 'fixed',
+          bottom: '20px',
+          left: '50%',
+          transform: 'translateX(-50%)',
+          width: '348px',
+          height: '69px',
+          backgroundColor: '#fff',
+          borderRadius: '34.5px',
+          display: 'flex',
+          justifyContent: 'space-around',
+          alignItems: 'center',
+          boxShadow: '0 0 8px rgba(0,0,0,0.1)',
+          zIndex: 1000,
+        }}
+      >
+        <Navigation />
+      </div>
     </div>
   );
 }

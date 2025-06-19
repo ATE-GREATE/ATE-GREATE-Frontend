@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import '../index1.css';
-import { useEffect } from 'react';
 
 export default function SignUpButton(props: { onClick?: () => void }) {
   const [isHovered, setIsHovered] = useState(false);
