@@ -43,7 +43,6 @@ const HomeJapan: React.FC = () => {
         margin: '0 auto',
         overflow: 'hidden',
         position: 'relative',
-        paddingBottom: '100px',
       }}
     >
       {/* 홈 버튼 */}
@@ -51,7 +50,7 @@ const HomeJapan: React.FC = () => {
         onClick={HomeClick}
         style={{
           position: 'absolute',
-          top: '67px',
+          top: '37px',
           left: '30px',
           background: 'none',
           border: 'none',
@@ -74,7 +73,7 @@ const HomeJapan: React.FC = () => {
         onClick={NotificationClick}
         style={{
           position: 'absolute',
-          top: '67px',
+          top: '37px',
           right: '30px',
           background: 'none',
           border: 'none',
@@ -96,7 +95,7 @@ const HomeJapan: React.FC = () => {
       <div
         style={{
           position: 'absolute',
-          top: '123px',
+          top: '93px',
           left: '30px',
           fontSize: '24px',
           fontWeight: 'normal',
@@ -111,7 +110,7 @@ const HomeJapan: React.FC = () => {
       <div
         style={{
           position: 'absolute',
-          top: '210px',
+          top: '190px',
           left: '20px',
           right: '36px',
           width: '340px',
@@ -152,7 +151,7 @@ const HomeJapan: React.FC = () => {
       <div
         style={{
           position: 'absolute',
-          top: '266px',
+          top: '246px',
           left: '0',
           right: '0',
           width: '393px',
@@ -167,7 +166,7 @@ const HomeJapan: React.FC = () => {
       <div
         style={{
           position: 'absolute',
-          top: '293px',
+          top: '273px',
           left: '30px',
           display: 'flex',
           gap: '12px',
@@ -205,7 +204,7 @@ const HomeJapan: React.FC = () => {
       <div
         style={{
           position: 'absolute',
-          top: '323px',
+          top: '303px',
           left: '30px',
           width: '100px',
           height: '7px',
@@ -217,7 +216,7 @@ const HomeJapan: React.FC = () => {
       <div
         style={{
           position: 'absolute',
-          top: '330px',
+          top: '310px',
           left: '30px',
           width: '331px',
           height: '0.1px',
@@ -229,7 +228,7 @@ const HomeJapan: React.FC = () => {
       <div
         style={{
           position: 'absolute',
-          top: '350px',
+          top: '330px',
           left: '30px',
           display: 'flex',
           gap: '8px',
@@ -262,7 +261,7 @@ const HomeJapan: React.FC = () => {
       <div
         style={{
           position: 'absolute',
-          top: '410px',
+          top: '390px',
           left: '0',
           right: '0',
           bottom: '100px',

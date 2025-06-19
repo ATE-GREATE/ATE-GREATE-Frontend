@@ -66,8 +66,8 @@ const styles: { [key: string]: React.CSSProperties } = {
   wrapper: {
     maxWidth: '328px',
     margin: '0 auto',
+    marginTop: '-50px',
     backgroundColor: '#FFFDF7',
-    padding: '24px',
     fontFamily: 'sans-serif',
     minHeight: '100vh',
   },

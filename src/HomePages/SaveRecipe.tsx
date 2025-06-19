@@ -41,7 +41,6 @@ const SaveRecipe: React.FC = () => {
         height: '100vh',
         margin: '0 auto',
         position: 'relative',
-        paddingBottom: '100px',
       }}
     >
       {/* 좌측 상단 홈 버튼 */}
@@ -49,7 +48,7 @@ const SaveRecipe: React.FC = () => {
         onClick={HomeClick}
         style={{
           position: 'absolute',
-          top: '67px',
+          top: '37px',
           left: '30px',
           background: 'none',
           border: 'none',
@@ -72,7 +71,7 @@ const SaveRecipe: React.FC = () => {
         onClick={NotificationClick}
         style={{
           position: 'absolute',
-          top: '67px',
+          top: '37px',
           right: '30px',
           background: 'none',
           border: 'none',
@@ -94,7 +93,7 @@ const SaveRecipe: React.FC = () => {
       <div
         style={{
           position: 'absolute',
-          top: '123px',
+          top: '93px',
           left: '30px',
           fontSize: '24px',
           fontWeight: 'normal',
@@ -105,11 +104,11 @@ const SaveRecipe: React.FC = () => {
         만들지 고민인가요?
       </div>
 
-      {/* 🔍 검색창 */}
+      {/* 검색창 */}
       <div
         style={{
           position: 'absolute',
-          top: '210px',
+          top: '190px',
           left: '20px',
           right: '36px',
           width: '340px',
@@ -150,7 +149,7 @@ const SaveRecipe: React.FC = () => {
       <div
         style={{
           position: 'absolute',
-          top: '266px',
+          top: '246px',
           left: '0',
           right: '0',
           width: '393px',
@@ -165,7 +164,7 @@ const SaveRecipe: React.FC = () => {
       <div
         style={{
           position: 'absolute',
-          top: '293px',
+          top: '273px',
           left: '30px',
           display: 'flex',
           gap: '12px',
@@ -205,7 +204,7 @@ const SaveRecipe: React.FC = () => {
       <div
         style={{
           position: 'absolute',
-          top: '323px',
+          top: '303px',
           left: '140px',
           width: '110px',
           height: '7px',
@@ -217,7 +216,7 @@ const SaveRecipe: React.FC = () => {
       <div
         style={{
           position: 'absolute',
-          top: '330px',
+          top: '310px',
           left: '30px',
           width: '331px',
           height: '0.1px',
@@ -230,7 +229,7 @@ const SaveRecipe: React.FC = () => {
       <div
         style={{
           position: 'absolute',
-          top: '400px',
+          top: '380px',
           width: '100%',
           textAlign: 'center',
           fontFamily: 'Pretend_M',
