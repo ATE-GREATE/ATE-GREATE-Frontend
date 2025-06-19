@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Navigation from '../HomePages/Navigation';
 import '../index1.css';
 import '../RefrigeratorPages/Refrigerator.css'

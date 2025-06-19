@@ -27,7 +27,7 @@ const Community: React.FC = () => {
   ];
 
   const [postsState, setPostsState] = useState(initialPosts);
-  const [openComments, setOpenComments] = useState<number | null>(null);
+  const [, setOpenComments] = useState<number | null>(null);
   const [likedPosts, setLikedPosts] = useState<number[]>([]);
 
   const handleLike = (id: number) => {

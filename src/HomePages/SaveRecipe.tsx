@@ -23,7 +23,7 @@ const SaveRecipe: React.FC = () => {
     navigate('/SaveRecipe');
   };
 
-  const [bookmarks, setBookmarks] = useState({
+  const [bookmarks,] = useState({
     galbijjim: false,
     kimbap: false,
     bibimbap: false,
@@ -31,14 +31,6 @@ const SaveRecipe: React.FC = () => {
     kimchi_stew: false,
     budae_jjigae: false,
   });
-
-  // 북마크 토글 함수
-  const toggleBookmark = (name: string) => {
-    setBookmarks((prev) => ({
-      ...prev,
-      [name]: !prev[name as keyof typeof prev],
-    }));
-  };
 
   const savedItems = Object.entries(bookmarks).filter(([_, value]) => value);
 

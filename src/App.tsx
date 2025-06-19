@@ -20,10 +20,7 @@ import Edit from './MyPages/Edit';
 import Inquiry from './MyPages/Inquiry';
 import Refrigerator from './RefrigeratorPages/Refrigerator';
 import Ingredients from './RefrigeratorPages/Ingredients';
-import Gallerypages from './MyPages/gallerypages';
 import Recipe from './HomePages/Recipe';
-
-
 
 const App = () => {
    return (
@@ -50,7 +47,6 @@ const App = () => {
           <Route path="/Inquiry" element={<Inquiry />} /> {/* 문의페이지 */}
           <Route path="/Refrigerator" element={<Refrigerator/>} /> {/* 냉장고*/}
           <Route path="/Ingredients" element={<Ingredients/>} /> {/* 냉장고 안 */}
-          <Route path="/Gallerypages" element={<Gallerypages/>} /> {/* 갤러리 */}
         </Routes>
       </BookmarkProvider>
   );
