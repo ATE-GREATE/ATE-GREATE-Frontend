@@ -39,7 +39,7 @@ export default function MyPages() {
       <div
         style={{
           position: 'absolute',
-          top: '266px',
+          top: '216px',
           left: '0',
           right: '0',
           width: '393px',
@@ -52,7 +52,7 @@ export default function MyPages() {
       <div
         style={{
           position: 'absolute',
-          top: '180px',
+          top: '130px',
           left: '50px',
           fontSize: '40px',
           color: '#4B75AD',
@@ -141,7 +141,7 @@ export default function MyPages() {
       <div
         style={{
           position: 'absolute',
-          top: '380px',
+          top: '320px',
           width: '400px',
           height: '1.5px',
           backgroundColor: '#D9D9D9',
@@ -197,7 +197,7 @@ export default function MyPages() {
       <div
         style={{
           position: 'absolute',
-          top: '580px',
+          top: '520px',
           width: '400px',
           height: '1.5px',
           backgroundColor: '#D9D9D9',
@@ -208,7 +208,7 @@ export default function MyPages() {
         onClick={handleSubmit}
         style={{
           position: 'absolute',
-          top: '600px',
+          top: '550px',
           left: '160px',
           fontSize: '14px',
           backgroundColor: 'transparent',

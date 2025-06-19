@@ -47,11 +47,11 @@
 }
 
 .box-top-1 {
-  top: 420px;
+  top: 360px;
 }
 
 .box-top-2 {
-  top: 500px;
+  top: 440px;
 }
 
 .my-text {
@@ -166,3 +166,4 @@
   border: none;
   cursor: pointer;
 }
+

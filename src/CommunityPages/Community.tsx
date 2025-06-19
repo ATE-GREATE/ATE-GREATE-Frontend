@@ -59,13 +59,12 @@ const Community: React.FC = () => {
         margin: '0 auto',
         overflow: 'hidden',
         position: 'relative',
-        paddingBottom: '100px',
       }}
     >
       {/* ffffff 배경 */}
       <div style={{
         position: 'absolute',
-        top: '266px',
+        top: '236px',
         left: '0',
         right: '0',
         width: '393px',
@@ -78,7 +77,7 @@ const Community: React.FC = () => {
       {/* 상단 메뉴 */}
       <div style={{
         position: 'absolute',
-        top: '180px',
+        top: '150px',
         left: '40px',
         fontSize: '40px',
         color: '#913636',
@@ -92,7 +91,7 @@ const Community: React.FC = () => {
         onClick={() => navigate('/community/write')}
         style={{
           position: 'absolute',
-          top: '195px',
+          top: '165px',
           right: '30px',
           backgroundColor: '#9F5A62',
           color: '#FFFFFF',
@@ -111,7 +110,7 @@ const Community: React.FC = () => {
       {/* 자유게시판 탭 */}
       <div style={{
         position: 'absolute',
-        top: '293px',
+        top: '263px',
         left: '30px',
         fontSize: '15px',
         fontWeight: 'bold',
@@ -122,16 +121,16 @@ const Community: React.FC = () => {
 
       <div style={{
         position: 'absolute',
-        top: '323px',
+        top: '293px',
         left: '30px',
-        width: '100px',
+        width: '80px',
         height: '7px',
         backgroundColor: '#E8AFB6',
       }} />
 
       <div style={{
         position: 'absolute',
-        top: '330px',
+        top: '300px',
         left: '30px',
         width: '331px',
         height: '1px',
@@ -141,12 +140,13 @@ const Community: React.FC = () => {
       {/* 게시글 목록 */}
       <div style={{
         position: 'absolute',
-        top: '335px',
+        top: '305px',
         left: '30px',
         width: '330px',
-        height: '570px',
-        overflowY: 'auto',
+        height: 'calc(100vh - 305px - 100px)',
+        overflowY: 'scroll',
         paddingRight: '10px',
+        marginBottom: '20px',
       }}>
         {postsState.map((post) => (
           <div
@@ -161,13 +161,12 @@ const Community: React.FC = () => {
             {/* 게시글 제목 */}
             <div style={{
               fontWeight: '500',
-              fontSize: '20px',
+              fontSize: '17px',
               fontFamily: 'Pretendard-Medium',
               marginBottom: '6px',
             }}>
               {post.title}
             </div>
-
             {/* 하단 정보 */}
             <div style={{
               display: 'flex',
@@ -208,7 +207,6 @@ const Community: React.FC = () => {
                 />
                 {post.likes}
               </span>
-
               {/* 댓글 */}
               <span
                 style={{
@@ -228,7 +226,6 @@ const Community: React.FC = () => {
           </div>
         ))}
       </div>
-
       {/* 하단 네비게이션 바 */}
       <div style={{
         position: 'fixed',

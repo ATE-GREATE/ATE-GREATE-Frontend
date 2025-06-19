@@ -33,7 +33,7 @@ export default function Refrigerator() {
             width: '280px',
             height: '572px',
             backgroundColor: '#fefdf8',
-            marginTop: '140px',
+            marginTop: '80px',
           }}
         >
           <img

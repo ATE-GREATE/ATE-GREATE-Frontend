@@ -7,7 +7,7 @@ import { useMemo } from 'react';
 export default function Ingredients() {
   const navigate = useNavigate();
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isbuttonModalOpen, setIsModalbuttonOpen] = useState(false);
+  const [, setIsModalbuttonOpen] = useState(false);
   const [selectedCategory, setSelectedCategory] = useState('vegetable');
 
   
@@ -170,6 +170,7 @@ export default function Ingredients() {
 
               </div>
               <div style={{
+                marginTop: '10px',
                 width: '100%',
                 height: '1181px',
                 overflowY: 'scroll',
@@ -212,7 +213,7 @@ export default function Ingredients() {
         <button style={{
           margin: '0 auto',
           padding: '24px',
-          marginTop: '89px',
+          marginTop: '10px',
           marginLeft: '-8px',
           border: '0px',
           backgroundColor: '#fefdf8',
@@ -264,7 +265,6 @@ export default function Ingredients() {
               justifyContent: 'space-between',
               padding: '0 14px',
               position: 'sticky',
-              top: 0,
               backgroundColor: '#D1E3E8',
               zIndex: 10
             }}>
@@ -298,7 +298,7 @@ export default function Ingredients() {
 
             {/* 동적 높이의 이미지 박스 */}
             <div style={{
-              height: '370px',
+              height: '400px',
               overflowY: 'scroll',
               marginTop: '16px',
               position: 'relative',
@@ -331,18 +331,6 @@ export default function Ingredients() {
                   <img src="/images/addition.png" style={{ marginTop: "5px", marginLeft: "2px" }} />
                 </button>
               </div>
-              {isbuttonModalOpen && (
-                <div>
-                  <img src="images/Union.png" style={{ width: '117px', height: '71px' }} />
-                  <button style={{ border: 'none' }}>
-                    <img src="images/Ingredients_button.png" style={{
-                      width: '9.49px',
-                      height: '9.49px',
-                      borderRadius: '1.97px',
-                    }} />
-                  </button>
-                </div>
-              )}
             </div>
           </div>
         </div>

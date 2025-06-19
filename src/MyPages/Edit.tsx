@@ -55,7 +55,7 @@ export default function Edit() {
   };
 
   return (
-    <div style={{ position: 'relative', marginTop: '58px' }}>
+    <div style={{ position: 'relative' }}>
       {/* 회원 정보 수정 */}
       <div
         style={{
@@ -114,7 +114,11 @@ export default function Edit() {
           borderBottomRightRadius: '16px',
           border: '1px solid #B5C9E4',
           boxShadow: '0px 4px 10px rgba(0, 0, 0, 0.1)',
+          overflowY: 'scroll', 
+          scrollbarWidth: 'none',
+          msOverflowStyle: 'none', 
         }}
+        className="scroll-box"
       >
         {/* 사진 */}
         <div style={{ display: 'flex', justifyContent: 'center' }}>
@@ -255,7 +259,6 @@ export default function Edit() {
           </div>
         </div>
       </div>
-
       {/* 하단 고정 네비게이션 바 */}
       <div
         style={{

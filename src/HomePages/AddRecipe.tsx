@@ -167,7 +167,6 @@ const styles: { [key: string]: React.CSSProperties } = {
     position: 'relative',
   },
   header: {
-    marginTop: '60px',
     marginBottom: '20px',
     display: 'flex',
     alignItems: 'center',
@@ -178,7 +177,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     fontWeight: '400', 
     color: '#000000',
     flex: 1,
-    marginRight: '36px',
+    marginLeft: '20px',
     textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)',
   },
   sectionTitle: {
@@ -227,6 +226,7 @@ const styles: { [key: string]: React.CSSProperties } = {
     fontSize: '11.38pt',
     fontFamily: 'Pretendard-SemiBold',
     marginBottom: '4px',
+    width: '100%',
     display: 'block',
   },
   line: {
